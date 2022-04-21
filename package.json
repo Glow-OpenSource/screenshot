@@ -1,0 +1,22 @@
+{
+  "name": "@glow-bot/screenshot",
+  "version": "0.1.0",
+  "description": "an library to screenshot a page easily using puppeteer",
+  "main": "dist/index.js",
+  "repository": "https://github.com/Glow-OpenSource/screenshot",
+  "author": "Googlefan256 (https://opensource.glow-bot.com/)",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "lint": "prettier --write \"**/**.ts\"",
+    "build": "tsc",
+    "prepublishOnly": "tsc"
+  },
+  "devDependencies": {
+    "prettier": "^2.6.2",
+    "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "puppeteer": "^13.6.0"
+  }
+}
