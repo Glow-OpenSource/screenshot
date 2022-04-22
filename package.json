@@ -1,6 +1,6 @@
 {
 	"name": "@glowsrc/screenshot",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "An library to screenshot a page easily using puppeteer",
 	"main": "dist/index.cjs",
 	"module": "dist/index.mjs",
