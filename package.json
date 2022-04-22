@@ -5,6 +5,12 @@
 	"main": "dist/index.cjs",
 	"module": "dist/index.mjs",
 	"types": "dist/index.d.ts",
+	"exports": {
+		"import": "./dist/index.mjs",
+		"require": "./dist/index.cjs",
+		"node": "./dist/index.mjs",
+		"default": "./dist/index.cjs"
+	},
 	"type": "commonjs",
 	"repository": "https://github.com/Glow-OpenSource/screenshot",
 	"author": "Googlefan256 (https://opensource.glow-bot.com/)",
@@ -12,7 +18,7 @@
 	"private": false,
 	"scripts": {
 		"lint": "prettier --write \"**/**.(js|ts|mjs|tsx|jsx|cjs)\"",
-		"build": "tsc\ngoss import\nnpm run lint",
+		"build": "tsc\ngoss import\nnpm run lint\ncp ./src/index.mjs ./dist/index.mjs",
 		"prepare": "npm run build\nnpm run lint"
 	},
 	"devDependencies": {
