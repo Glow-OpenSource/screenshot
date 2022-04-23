@@ -35,5 +35,6 @@
 	],
 	"bin": {
 		"ss": "dist/cli.js"
-	}
+	},
+	"keywords": ["screenshot", "puppeteer"]
 }
